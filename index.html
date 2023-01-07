@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.tailwindcss.com">
+	<title>Cheap Gas Finder</title>
 </head>
 <body>
-    
+</section>
+<h1>Cheap Gas Prices</h1>
+
+<h2>Find Gas Stations by:</h2>
+
+<select name="type" class="select select2 form-control" data-placeholder="Gas Type">
+		<option selected hidden>Gas Type</option>
+		<option value="" selected>Regular Gas</option>
+		<option value="premium"   >Premium Gas</option>
+		<option value="mid-grade" >Mid-Grade Gas</option>
+		<option value="diesel"    >Diesel</option>
+	</select>
+<input id="search-input" class="form-control input-lg location" type="text" name="location" data-placeholder="City, State or Zip" placeholder="City, State or Zip" value="" />
+<button  id ="find-btn">
+	Find
+</button>
+</section>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="./assets/Javascript/script.js"></script>
 </html>
